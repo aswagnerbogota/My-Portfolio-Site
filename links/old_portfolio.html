@@ -1,0 +1,477 @@
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- Code under this line -->
+
+
+<<!DOCTYPE html>
+<html>
+<style type="text/css">
+	
+/* Navigation Bar */
+	
+	@media screen and (max-width: 696px) {
+		nav {
+		  height: auto;
+		  background-color: #26282B;
+		  font-size: 20px;
+		  font-family: 'Open Sans', sans-serif;
+		  font-weight: bold;
+		  color: white;
+		  position: fixed;
+		  top: 0;
+		  width: 100%;
+		}
+		nav ul {
+		  height: auto;
+		  padding: 0px 0px;
+		  margin: 0px 0px 0px 0px;
+		}
+		nav ul li {
+		  display: inline;
+		  padding: 6px;
+		}
+		nav a {
+		  text-decoration: none;
+		  color: white;
+		}
+		nav a:hover {
+		  color: #423D3A;
+		  background-color: #89817A;
+		  text-decoration: none;
+		}
+		#fullname {
+		  font-size: 25px;
+		  height: auto;
+		  padding: 8px 85px 8px 15px;
+		  margin: 0px;
+		}
+	}
+
+	@media screen and (min-width: 696.5px) {
+		nav {
+		  height: 55px;
+		  background-color: #26282B;
+		  font-size: 25px;
+		  font-family: 'Open Sans', sans-serif;
+		  font-weight: bold;
+		  color: white;
+		  position: fixed;
+		  top: 0;
+		  width: 100%;
+		}
+		nav ul {
+		  height: auto;
+		  padding: 0px 0px;
+		  margin: 0px 0px 6px 0px;
+		}
+		nav ul li {
+		  display: inline;
+		  padding: 7px;
+		}
+		nav a {
+		  text-decoration: none;
+		  color: white;
+		}
+		nav a:hover {
+		  color: #423D3A;
+		  background-color: #89817A;
+		  text-decoration: none;
+		}
+		#fullname {
+		  font-size: 25px;
+		  height: auto;
+		  padding: 8px 45px 8px 50px;
+		  margin: 0px;
+		}
+	}
+
+/* Body */
+
+	body {
+	  background-color: gray;
+	  margin: 0;
+
+		}
+
+/* Parallax */
+
+	#parallax-bg {
+	  padding: 300px 0;
+	  background-image: url(http://i1325.photobucket.com/albums/u621/Andre_Wagner/computer-1210791_zpsxbvcwnic.jpg);
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-attachment: fixed;
+	  -webkit-transition: all 0.2s ease;
+	  -moz-transition: all 0.2s ease;
+	  transition: all 0.2s ease;
+	}
+	#parallax-bg2 {
+	  padding: 300px 0;
+	  background-image: url(http://i1325.photobucket.com/albums/u621/Andre_Wagner/office-581131_zpsphcchqgs.jpg);
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-attachment: fixed;
+	  margin: -10px 0 0 0;
+	  -webkit-transition: all 0.2s ease;
+	  -moz-transition: all 0.2s ease;
+	  transition: all 0.2s ease;
+	}
+	#parallax-bg3 {
+	  padding: 300px 0;
+	  background-image: url(http://i1325.photobucket.com/albums/u621/Andre_Wagner/atlanta-819326_zpssjisp8gm.jpg);
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-attachment: fixed;
+	  -webkit-transition: all 0.2s ease;
+	  -moz-transition: all 0.2s ease;
+	  transition: all 0.2s ease;
+	}
+	#parallax-bg4 {
+	  padding: 300px 0;
+	  background-image: url(http://i1325.photobucket.com/albums/u621/Andre_Wagner/startup-593327_zpswhtweo03.jpg);
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-attachment: fixed;
+	  margin: -10px 0 0 0;
+	  -webkit-transition: all 0.2s ease;
+	  -moz-transition: all 0.2s ease;
+	  transition: all 0.2s ease;
+	}
+
+/* Welcome */
+	@media screen and (max-width: 805px) {
+		#transparent-welcome {
+	  		background-color: rgba(255, 255, 255, 0.8);
+	  		text-align: center;
+	  		margin: 0 auto;
+	  		padding: 5px 10px 15px 10px;
+			}
+	}
+	@media screen and (min-width: 806px) {
+		#transparent-welcome {
+	  		background-color: rgba(255, 255, 255, 0.8);
+	  		text-align: center;
+	  		margin: 0 auto;
+	  		padding: 10px 10px 25px 10px;
+			}
+	}
+	hr { width:auto; height:2px; background: #A9A9A9; margin: 10px 20%;  }
+
+/* About me */
+	@media screen and (max-width: 767px) {
+		#divbg2 {
+			display: flex; flex-flow: column wrap; align-items: center;
+			background-color: rgba(255, 255, 255, 0.8);
+			padding: 20px;
+		}
+		#leftcontent {
+			order: 1; flex: 0 1 33%;
+			width: 300px;
+			padding: 10px;
+			margin: 20px 0;
+			text-align: center;
+		}
+		#middlecontent {
+			order: 2; flex: 1;
+		}
+		#rightcontent {
+			order: 3; flex: 0 1 33%;
+			margin: 20px 0;
+			min-height: 300px;
+			display: flex; flex-flow: column wrap; align-items: center; align-content: space-between; justify-content: center;
+		}
+		#portrait {
+		  width: 300px;
+		  border-color: white;
+		  border-style: solid;
+		  border-width: 7px;
+		  border-radius: 50%;
+		  margin: 10px;
+		}
+				/* About me buttons */
+		#button-fcc {
+		    background-color: #0A6D3D;
+		    border: 3px white solid;
+		    -webkit-border-radius: 5px;
+		    -moz-border-radius: 5px;
+		    border-radius: 5px;
+		    color: white;
+		    padding: 15px 32px;
+		    text-align: center;
+		    text-decoration: none;
+		    font-size: 16px;
+		    width: 250px;
+
+		}
+		#button-gh {
+		    background-color: black;
+		    border: 3px #777777 solid;
+		    -webkit-border-radius: 5px;
+		    -moz-border-radius: 5px;
+		    border-radius: 5px;
+		    color: white;
+		    padding: 15px 50px;
+		    text-align: center;
+		    text-decoration: none;
+		    font-size: 16px;
+		    width: 250px;
+		}
+		#button-ig {
+		    background-color: #ded1c1;
+		    border: 5px #9b6954 solid;
+		    -webkit-border-radius: 5px;
+		    -moz-border-radius: 5px;
+		    border-radius: 5px;
+		    padding: 15px 50px;
+		    text-align: center;
+		    color: #777777;
+		    text-decoration: none;
+		    font-size: 16px;
+		    width: 250px;
+		}
+	}
+	@media screen and (min-width: 768px) {
+		#divbg2 {
+			display: flex; flex-flow: row wrap; justify-content: space-around;
+			background-color: rgba(255, 255, 255, 0.8);
+			padding: 20px;
+		}
+		#leftcontent {
+			order: 1; flex: 0 1 33%;
+			padding: 10px;
+			margin: 20px 0;
+			text-align: center;
+		}
+		#middlecontent {
+			order: 2; flex: 1;
+					display: flex; justify-content: center; align-items: center;
+		}
+		#rightcontent {
+			order: 3; flex: 0 1 33%;
+			margin: 20px 0;
+			display: flex; flex-flow: column wrap; align-items: center;
+		}
+		#portrait {
+		  width: 300px;
+		  border-color: white;
+		  border-style: solid;
+		  border-width: 7px;
+		  border-radius: 50%;
+		  margin: 10px;
+		}
+				/* About me buttons */
+		#button-fcc {
+		    background-color: #0A6D3D;
+		    border: 3px white solid;
+		    -webkit-border-radius: 5px;
+		    -moz-border-radius: 5px;
+		    border-radius: 5px;
+		    color: white;
+		    padding: 15px 32px;
+		    text-align: center;
+		    text-decoration: none;
+		    font-size: 16px;
+		    width: 250px;
+		}
+		#button-gh {
+		    background-color: black;
+		    border: 3px #777777 solid;
+		    -webkit-border-radius: 5px;
+		    -moz-border-radius: 5px;
+		    border-radius: 5px;
+		    color: white;
+		    padding: 15px 50px;
+		    text-align: center;
+		    text-decoration: none;
+		    font-size: 16px;
+		    width: 250px;
+		}
+		#button-ig {
+		    background-color: #ded1c1;
+		    border: 5px #9b6954 solid;
+		    -webkit-border-radius: 5px;
+		    -moz-border-radius: 5px;
+		    border-radius: 5px;
+		    padding: 15px 50px;
+		    text-align: center;
+		    color: #777777;
+		    text-decoration: none;
+		    font-size: 16px;
+		    width: 250px;
+		}
+	}
+	
+/* Portfolio */
+	#divbg3 {
+		display: flex; flex-flow: row wrap; justify-content: space-around;
+		background-color: rgba(255, 255, 255, 0.8);
+		padding: 20px;
+	}
+	#port1 {
+		order: 1; flex: 1; min-width: 300px; max-width: 350px; border: solid #777777 3px; margin: 10px 0; border-radius: 5px;
+		display: flex; flex-flow: row wrap; justify-content: center;
+	}
+	#port2 {
+		order: 2; flex: 1; min-width: 300px; max-width: 350px; border: solid #777777 3px; margin: 10px 0; border-radius: 5px;
+		display: flex; flex-flow: row wrap; justify-content: center;
+	}
+	#port3 {
+		order: 3; flex: 1; min-width: 300px; max-width: 350px; border: solid #777777 3px; margin: 10px 0; border-radius: 5px;
+		display: flex; flex-flow: row wrap; justify-content: center;
+	}
+	#port4 {
+		order: 3; flex: 1; min-width: 300px; max-width: 350px; border: solid #777777 3px; margin: 10px 0; border-radius: 5px;
+		display: flex; flex-flow: row wrap; justify-content: center;
+	}
+	#port5 {
+		order: 3; flex: 1; min-width: 300px; max-width: 350px; border: solid #777777 3px; margin: 10px 0; border-radius: 5px;
+		display: flex; flex-flow: row wrap; justify-content: center;
+	}
+	#port6 {
+		order: 3; flex: 1; min-width: 300px; max-width: 350px; border: solid #777777 3px; margin: 10px 0; border-radius: 5px;
+		display: flex; flex-flow: row wrap; justify-content: center;
+	}
+	#portimg {
+		max-width: 300px; min-width: 250px; margin: auto;
+	}
+	#portlinks {
+		text-decoration: none; color: black; 
+	}
+	
+/* Contact Me */
+	#divbg4 {
+		display: flex; flex-flow: row wrap; justify-content: space-around;
+		background-color: rgba(255, 255, 255, 0.8);
+		padding: 20px;
+	}
+
+/* Footer */
+	#footer {
+		margin: 50px; font-size: 17px; color: black;
+	}
+	footer > a {
+		padding: 20px;
+	}
+	#copyright {
+		padding: 20px; font-size: 12px;
+	}
+
+</style>
+<head>
+	<title>Portfolio - Andre S. Wagner</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<nav>
+	<p id="fullname" style="float: left;">Andre S. Wagner
+    <ul style="float: right; ">
+  </p>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#aboutme">About</a></li>
+  <li><a href="#portfolio">Portfolio</a></li>
+  <li><a href="#contactme">Contact</a></li>
+  </ul>
+</nav>
+<body>
+<head><a name="home"></a></head>
+<div id="parallax-bg">
+	<div id="transparent-welcome">
+		<h1>Welcome to my Protfolio!!
+		</h1>
+		<hr/>
+		<p><i>Logic will get you from A to B. Imagination will take you everywhere. - Albert Einstein
+		</i></p>
+	</div>
+	<a name="aboutme"></a>
+</div>
+
+<div id="parallax-bg2">
+	<div id="divbg2">
+		<div id="leftcontent">
+			<h1> About me!!</h1>
+			<br>
+			<p>I'm a Apple Certified Macintosh Technician, who quit his job in the United States to travel South America and learn how to develop websites in my spare time. I'm currently living in Bogota, Colombia working as an English teacher and volunteering at a Co-working & Co-living space called Magicville.</p>
+		</div>
+		<div id="middlecontent">
+			<img id="portrait" src="http://i1325.photobucket.com/albums/u621/Andre_Wagner/965a2272-5fcb-4016-aa31-3852f37c132e_zpsmpjn3vu2.jpg">
+		</div>
+		<div id="rightcontent">
+			<a href="https://www.freecodecamp.com/aswagnerbogota" target="_blank" id="button-fcc">FreeCodeCamp</a>
+			<br><br>
+			<a href="https://github.com/aswagnerbogota" target="_blank" id="button-gh">GitHub</a>
+			<br><br>
+			<a href="https://www.instagram.com/aswagner1991/" target="_blank" id="button-ig">Instagram</a>
+		</div>
+		
+	</div>
+	<a name="portfolio"></a>
+</div>
+<div id="parallax-bg3">
+	<div id="divbg3">
+		<a id="portlinks" href="#" target="_blank">
+		<div id="port1">
+			<img id="portimg" src="http://i1325.photobucket.com/albums/u621/Andre_Wagner/Placeholders/colors_zps9wfmbkrn.jpeg">
+			<h3>Lorem ipsum dolor sit</h3>
+			<p>Lorem ipsum dolor sit</p>
+		</div>
+		</a>
+		<a id="portlinks" href="#" target="_blank">
+		<div id="port2">
+			<img id="portimg" src="http://i1325.photobucket.com/albums/u621/Andre_Wagner/Placeholders/baseball_zpsmesm6l08.jpeg">
+			<h3>Lorem ipsum dolor sit</h3>
+			<p>Lorem ipsum dolor sit</p>
+		</div>
+		</a>
+		<a id="portlinks" href="#" target="_blank">
+		<div id="port3">
+			<img id="portimg" src="http://i1325.photobucket.com/albums/u621/Andre_Wagner/Placeholders/purple_zps9dghmcqo.jpeg">
+			<h3>Lorem ipsum dolor sit</h3>
+			<p>Lorem ipsum dolor sit</p>
+		</div>
+		</a>
+		<a id="portlinks" href="#" target="_blank">
+		<div id="port4">
+			<img id="portimg" src="http://i1325.photobucket.com/albums/u621/Andre_Wagner/Placeholders/bread_zpsi2rgbvnd.jpeg">
+			<h3>Lorem ipsum dolor sit</h3>
+			<p>Lorem ipsum dolor sit</p>
+		</div>
+		</a>
+		<a id="portlinks" href="#" target="_blank">
+		<div id="port5">
+		<img id="portimg" src="http://i1325.photobucket.com/albums/u621/Andre_Wagner/Placeholders/color2_zps374tiaup.jpeg">
+			<h3>Lorem ipsum dolor sit</h3>
+			<p>Lorem ipsum dolor sit</p>
+		</div>
+		</a>
+		<a id="portlinks" href="#" target="_blank">
+		<div id="port6">
+		<img id="portimg" src="http://i1325.photobucket.com/albums/u621/Andre_Wagner/Placeholders/DJ_zps8bbexug0.jpeg">
+			<h3>Lorem ipsum dolor sit</h3>
+			<p>Lorem ipsum dolor sit</p>
+		</div>
+		</a>
+	</div>
+	<a name="contactme"></a>
+</div>
+<div id="parallax-bg4">
+	<div id="divbg4">
+		<h3>Contact Andre Wagner: <a href="mailto:aswagner.bogota@gmail.com?Subject=Hello%20again" target="_top">aswagner.bogota@gmail.com</a>
+		</h3>
+	</div>
+	
+</div>
+<footer id="footer">
+	<a id="portlinks" href="#home">Home</a> - 
+  	<a id="portlinks" href="#aboutme">About</a> - 
+  	<a id="portlinks" href="#portfolio">Portfolio</a> - 
+  	<a id="portlinks" href="#contactme">Contact</a>
+  	<p id="copyright">Copyright &copy; Andre Stefan Wagner 2016. All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
